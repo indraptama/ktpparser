@@ -1,0 +1,108 @@
+extends partial/default.pug
+block content
+  .App.flex
+    .InputData.w-50.flex-half.relative
+      .container.mh-auto.pv3.ph3
+        h2.f6.ttu.tracked.mb3 Identitas Penghadap
+        ul
+          li
+            form.Card.bg-white.pa3.shadowDepth1#penghadap
+              .CardTitle.mb3
+                // h3.f4.normal Identitas Penghadap
+              .CardContent
+                .noKTP.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal N.I.K
+                  .dtc.w-75.v-mid
+                    input.w-100.ph2.pv1.js-noKTPInput(name="nik" maxlength="16")
+                .namaLengkap.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal Nama Lengkap
+                  .dtc.w-75.v-mid
+                    input.w-100.ph2.pv1(name="name")
+                .tempatTanggalLahir.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal Tempat Tgl.Lahir
+                  .dtc.w-75.v-mid
+                    .cf
+                      .fl.w-50
+                        input.w-100.ph2.pv1(name="birthplace")
+                      .fl.w-50
+                        .flex.pl2.tc
+                          input.w-50.ph2.pv1.js-numericInput.ml1(name="birthdate" maxlength="2")
+                          input.w-50.ph2.pv1.js-numericInput.ml1(name="birthmonth" maxlength="2")
+                          input.w-100.ph2.pv1.js-numericInput.ml1(name="birthyear" maxlength="4")
+
+                .jenisKelamin.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal Jenis Kelamin
+                  .dtc.w-75.v-mid
+                    select.ph2.pv1.bg-white(name="gender")
+                      option(value="man") Laki-laki
+                      option(value="woman") Perempuan
+
+                .alamat.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal Alamat
+                  .dtc.w-75.v-mid
+                    .cf
+                      .fl.w-100
+                        input.w-100.ph2.pv1(name="street")
+
+                .rtrw.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal RT / RW
+                  .dtc.w-75.v-mid
+                    input.dib.w3.ph2.pv1.js-numericInput(name="rt" maxlength="3")
+                    input.dib.w3.ph2.pv1.js-numericInput(name="rw" maxlength="3")
+
+                .kelurahan.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal Kelurahan
+                  .dtc.w-75.v-mid
+                    .cf
+                      .fl.w-100
+                        input.w-100.ph2.pv1(name="kelurahan")
+
+                .kecamatan.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal Kecamatan
+                  .dtc.w-75.v-mid
+                    .cf
+                      .fl.w-100
+                        input.w-100.ph2.pv1(name="kecamatan")
+
+                .kecamatan.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal Kota / Kabupaten
+                  .dtc.w-75.v-mid
+                    .cf
+                      .fl.w-100
+                        input.w-100.ph2.pv1(name="city")
+
+                .statusPerkawinan.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal Status Perkawinan
+                  .dtc.w-75.v-mid
+                    select.ph2.pv1.bg-white(name="martialstatus")
+                      option(value="single") Belum Menikah
+                      option(value="married") Menikah
+                      option(value="divorce") Cerai Hidup
+                      option(value="widowed") Cerai Mati
+
+                .pekerjaan.dt.w-100.mb2
+                  .dtc.w-25.v-mid
+                    h4.f6.normal Pekerjaan
+                  .dtc.w-75.v-mid
+                    .cf
+                      .fl.w-100
+                        input.w-100.ph2.pv1(name="job")
+
+
+      .ActionBar
+        .container.mh-auto.tc
+            a#buttonReset.dib.ph3.pv2.link.w4.tc.white.bg-red.br1.ttc.ml1.mr1.dim(href="#") clear
+            a#generateButton.dib.ph3.pv2.link.w4.tc.white.bg-blue.br1.ttc.ml1.mr1.dim(href="http://google.com") generate
+    .Results.w-50.pv3.ph3.flex-half
+      .container.mh-auto
+        #ktpresult.courier.lh-copy

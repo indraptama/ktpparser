@@ -1,0 +1,4 @@
+{
+  "default": "{!title} {!name}, lahir di {!birthplace}, pada tanggal {!birthdate}-{!birthmonth}-{!birthyear} ({!birthinwords}), {!job}, Warga Negara Indonesia, Pemegang Kartu Tanda Penduduk dengan Nomor Induk Kependudukan {!nik}, bertempat tinggal di {!street}, Rukun Tetangga {!rt}, Rukun Warga {!rw}, Kelurahan/Desa {!kelurahan}, Kecamatan {!kecamatan}, {!city}.",
+  "pt": "{!title} {!name}, lahir di {!birthplace}, pada tanggal {!birthdate}-{!birthmonth}-{!birthyear} ({!birthinwords}), {!job}, Warga Negara Indonesia, Pemegang Kartu Tanda Penduduk dengan Nomor Induk Kependudukan {!nik}, bertempat tinggal di {!street}, Rukun Tetangga {!rt}, Rukun Warga {!rw}, Kelurahan/Desa {!kelurahan}, Kecamatan {!kecamatan}, {!city}."
+}

@@ -1,0 +1,3 @@
+{
+  "default": "{!kelamin} {!namaLengkap}, lahir di {!kotaLahir}, pada tanggal {!numTanggalLahir}-{!numBulanLahir}-{!numTahunLahir} ({!lahirWord}), {!pekerjaan}, Warga Negara Indonesia, Pemegang Kartu Tanda Penduduk dengan Nomor Induk Kependudukan {!noKTP}, bertempat tinggal di {!alamat}, Rukun Tetangga {!RT}, Rukun Warga {!RW}, Kelurahan/Desa {!kelurahan}, Kecamatan {!kecamatan}, {!kotaTinggal}."
+}
